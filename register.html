@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">E-Store</a>
+    <nav class="nav">
+      <a href="./index.html">Products</a>
+      <a href="./cart.html">Cart <span id="cartBadge" class="badge">0</span></a>
+      <a href="./login.html">Login</a>
+      <a href="./register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container narrow">
+    <h1>Register</h1>
+
+    <form id="registerForm" class="card">
+      <label>Name</label>
+      <input type="text" id="name" required />
+
+      <label>Email</label>
+      <input type="email" id="email" required />
+
+      <label>Password (min 6 chars)</label>
+      <input type="password" id="password" required minlength="6" />
+
+      <button class="btn primary" type="submit">Create Account</button>
+      <p class="muted" id="msg"></p>
+    </form>
+  </main>
+
+  <script type="module" src="./js/auth.js"></script>
+</body>
+</html>

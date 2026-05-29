@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html">E-Store</a>
+    <nav class="nav">
+      <a href="./index.html">Products</a>
+      <a href="./cart.html">Cart <span id="cartBadge" class="badge">0</span></a>
+      <a href="./login.html" id="loginLink">Login</a>
+      <a href="./register.html" id="registerLink">Register</a>
+      <button class="linklike" id="logoutBtn" style="display:none;">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <div id="cartList"></div>
+
+    <div class="card" style="margin-top:16px;">
+      <div class="row">
+        <strong>Total:</strong>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button id="checkoutBtn" class="btn primary" style="margin-top:12px;">Checkout (Place Order)</button>
+      <p class="muted" id="checkoutMsg"></p>
+    </div>
+  </main>
+
+  <script type="module" src="./js/checkout.js"></script>
+</body>
+</html>
